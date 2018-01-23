@@ -33,110 +33,136 @@
 
 			<section>
 				<h1>Mètodes d'Investigació Criminològica Avançada</h1>
-				<h3>Sessió 5: QGIS i Mapes</h3>
+				<h3>Sessió 5: Anàlisi quantitatiu</h3>
 				<p><a href="http://johnrbpalmer.com">John Palmer</a>
 				</section>
 
-				<section>
-				<h2>Introducció dels connectors de QGIS</h2>
-				</section>
+<section>
+<h2>Models Lineals</h2>
+</section>
 
-				<section>
-				<img class="stretch" src="images/plugin_menu_screenshot.png">
-				</section>
-
-				<section>
-				<p>Instal·lar OpenLayers Plugin</p>
-				<p>Instal·lar mmqgis</p>
-				<p>Instal·lar qgis2web</p>
-				</section>
+<section data-background-image="images/echazarra_cover.png" data-background-size="contain">
+</section>
 
 
-				<section>
-				<h2>Exercici 1</h2>
-				<p>Fonts de dades de mapes</p>
-				</section>
-
-				<section>
-				<h3>Mapes raster</h3>
-				</section>
-
-				<section>
-				<img class="stretch" src="images/osl_plugin_menu.png">
-				</section>
-
-				<section>
-				<h3>Mapes vectorial</h3>
-				</section>
+<section data-background-image="images/perception_reg_FE.png" data-background-size="contain">
+</section>
 
 
-				<section>
-				<h2>Formats d'arxius vectorials importants</h2>
-				<ul>
-				<li>ESRI Shapefile (.shp, .dbf, .prj ...)</li>
-				<li>XML (.xml, .osm)</li>
-				<li>SQLite (.sqlite)</li>
-				</ul>
-				</section>
+<section data-background-image="images/perception_ML_1.png" data-background-size="contain">
+</section>
 
-				<section>
-				<a target="_blank" href="http://www.openstreetmap.org">OpenStreetMap</a>
-				</section>
+<section data-background-image="images/perception_ML_2.png" data-background-size="contain">
+</section>
 
 
-				<section>
-				<img class="stretch" src="images/osm_vec.png">
-				</section>
 
 
-				<section>
-				<h2>Exercici 2</h2>
-				<p>L'extracció de capes d'arxius XML/OSM</p>
-				</section>
+
+<section>
+<h3>L'equació de predicció</h3>
+$$\hat{y} = a + bx$$
+</section>
 
 
-				<section>
-				<h2>Exercici 3</h2>
-				<p>Fusió de dades</p>
-				</section>
+<section>
+<h3>mínims quadrats ordinaris</h3>
+$$b = \frac{\sum\left(x - \bar{x}\right)\left(y - \bar{y}\right)}{\sum\left(x-\bar{x}\right)^2}$$
+<br>
+$$a = \bar{y} - b\bar{x}$$
+</section>
 
-				<section>
-				<img class="stretch" src="images/euro_homicide_demo_map.png">
-				</section>
+<section>
+<h3>Exercici: Biometria dels estudiants</h3>
+<a href="demo_s02.R">R Script</a><br>
+<a href="http://www.amstat.org/publications/jse/v20n3/mclaren/shoesize.xls">Dataset</a>
+</section>
 
-				<section>
-				<h4>QGIS: Unions</h4>
-				<img class="stretch" src="images/join_screenshot.png">
-				</section>
+					<section data-transition="fade-out">
+						<h3>Relació entre altura i talla de sabates</h3>
+						<img class="stretch" src="images/height_shoe_scatter.png">
+					</section>
+
+					<section data-transition="fade-in">
+						<h3>Relació entre altura i talla de sabates</h3>
+						<img class="stretch" src="images/height_shoe_scatter_lm.png">
+					</section>
 
 
-				<section>
-				<h2>Exercici 4</h2>
-				<p>Classificació</p>
-				</section>
+<section>
+<h3>Correlació</h3>
+$$r = \left(\frac{s_x}{s_y}\right)b$$ 
+</section>
 
 
-				<section>
-				<h2>Exercici 5</h2>
-				<p>Geocodificació</p>
-				</section>
+<section>
+<h3>Regressió multivariant</h3>
+$$\hat{y} = \alpha + \beta_1x_1 + \beta_2x_2$$
+</section>
 
-				
+<section>
+<h3>Regressió multivariant</h3>
+<a href="images/fp_3Dreg/index.html">3D</a>
+</section>
 
-				<section data-background="images/pencils.jpg" data-state="footer_pencils">
-					<div style="background-color: rgba(255, 255, 255, .95); padding:20px;">
-						<h2>Projecte de Cartografia</h2>
-						<ul>
-							<li>13 de febrer: Tria un tema i fonts de dades</li>
-							<li>20 de febrer: Primer Mapa</li>
-							<li>27 de febrer: Segon Mapa</li>
-							<li>13 de març: Presentar mapes finals</li>
+<section>
+<h3>Variables categòriques</h3>
+$$\hat{y} = \alpha + \beta_1{x_1} + \beta_2{\textrm{D}}$$
+</section>
 
-						</ul>
-					</div>
-					<style>.footer_pencils footer:after { content: "Pencils, Public Domain, Wikimedia Commons"; color:white;background-color: rgba(0,0,0,0.5); padding: 5px;}</style>							
-					<div>&nbsp;</div>	
-				</section>
+<section>
+<h3>Variables categòriques</h3>
+<img class="stretch" src="images/fp_reg_cat.png">
+</section>
+
+
+<section>
+<h3>Variables categòriques</h3>
+<img class="stretch" src="images/fp_reg_ints.png">
+</section>
+
+<section>
+<h3>Interaccions</h3>
+$$\hat{y} = \alpha + \beta_1x_1 + \beta_2\textrm{D} + \beta_3x_1\textrm{D}$$
+</section>
+
+
+<section>
+<h3>Interaccions</h3>
+<img class="stretch" src="images/fp_reg_ints_slopes.png">
+</section>
+
+
+<section>
+<h3>Interaccions</h3>
+$$\hat{y} = \alpha + \beta_1x_1 + \beta_2x_2 + \beta_3x_1x_2$$
+</section>
+
+
+<section>
+<h3>Interaccions</h3>
+<a href="images/fp_int_3Dreg/index.html">3D</a>
+</section>
+
+
+<section>
+<h3>Logit</h3>
+$$\textrm{logit}(\pi) = \textrm{log}\frac{\pi}{1-\pi} = \alpha + \beta x$$
+</section>
+
+
+<section data-background-image="images/perception_reg_FE.png" data-background-size="contain">
+</section>
+
+
+<section data-background-image="images/perception_ML_1.png" data-background-size="contain">
+</section>
+
+<section data-background-image="images/perception_ML_2.png" data-background-size="contain">
+</section>
+
+
+
 
 			</div>
 		</div>
