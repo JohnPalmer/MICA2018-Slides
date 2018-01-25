@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1017px" height="367px" version="1.1" content="&lt;mxfile type=&quot;device&quot; userAgent=&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36&quot; version=&quot;6.0.3.2&quot; editor=&quot;www.draw.io&quot;&gt;&lt;diagram name=&quot;Page-1&quot;&gt;7ZnbjpswEIafJrcrwMHA7Wa320qt1DYXvawcGA67DqbGOfXpawc7QHD2oE1JpTSRIjwYH/7xN4OdCZottw+cVPkXlgCdeE6ynaC7ieeFAZa/yrBrDFNVUoaMF0ljclrDvPgNjdE11lWRQK1tjUkwRkVR9Y0xK0uIRa9Fwjnb9KuljCY9Q0UyGBjmMaHGeuO39h9FInJtd3HU3vgIRZbrzkNPT3lB4qeMs1WpeyxZCc2dJTHN6JHWOUnYpmNC9xM044yJ5mq5nQFVuh5pVoudGegE3eZiSWXBlZf72x9OPOy+5mE5Lw5lT9BT7UVB88Sa0JVp8LgHSKSsusi4yFnGSkLvW+vtXilQTTr94TyCEDu9MshKMGlqW/jMWKXr1YKzJ5gxyvi+T+TsP4c7xnuqbspKoZv0pocpq0EeLYZWA6MaW/FY1wr0EhCEZ3Bw/8F/kglgSxB8J+twoEQU6377RK/O7FCvlVleaKXtqpvOO6o/QAmcqErfVlCLgpUDP/SlOHK8XIaVqrfcZgrmm5SyTZwTLm5qOUXxU1Xf5IWAeUX2GmxkNaVmQWlHd3ATHwKbRyIcIIKN/npUp/2xBi5g+7xHhkqbBzQjJvC4GuRNB2I/bGx5h18Xn8E5UXilSISeBQk0EhKm847qc6AqLchBymVbq/ZlOJal1eJR2utz8VFxFkNdv46PNIwhjm3uWYT+1HdG4iNy+4CYpNIFBGMLID4+AyDD6HUlgCALIP5YgKCB6nLumpCECHIRHhICYWrlAcchLNJxeEAmehx4QEMevMjGA3q/Z1zHvVYgfAsQwVhA+APVP5UCeMXhokikaerZU0SCF9gf6RXKR/7LSCBrivDOgcQwnV8JEoEFiWgkJFxnmCSuV/boBCHnj0TDTfQdrIFKPeSIcmC6udEjka++1uS8/4wTiQJnehSJsCU5B7ZI5LzfN67p/eqQMHuEHhJjbeei4SvRd0gLdYrm/DrzAcebmPg3DjiOmcCOhQmTiP8CE8NXpyth4pI7uOi5HdyScfi/kTt+a8W2XIGsuWJ6hjw+PNj4yqFWY/ccGbySoswuc+wkY1aYTG3eCb0FGiuTh+b06JDJg6F3sG2bPQ3f7B1ZbP9E2d/r/EuF7v8A&lt;/diagram&gt;&lt;/mxfile&gt;" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0.5,0.5)">
+    <path d="M 159 82 L 179 82 L 179 84 L 175.63 84" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <path d="M 180.88 84 L 173.88 87.5 L 175.63 84 L 173.88 80.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <ellipse cx="80" cy="82" rx="79" ry="80.5" fill="#e1d5e7" stroke="#9673a6" stroke-width="2" pointer-events="none"/>
+    <g transform="translate(2.5,53.5)"/>
+    <path d="M 348 84 L 368 84 L 368 86 L 366.63 86" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <path d="M 371.88 86 L 364.88 89.5 L 366.63 86 L 364.88 82.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <rect x="182" y="6" width="166" height="156" rx="9.36" ry="9.36" fill="#f8cecc" stroke="#b85450" stroke-width="2" pointer-events="none"/>
+    <g transform="translate(183.5,56.5)"/>
+    <path d="M 502 86 L 522 86 L 522 85 L 519.63 85" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <path d="M 524.88 85 L 517.88 88.5 L 519.63 85 L 517.88 81.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <rect x="373" y="9" width="129" height="153" rx="7.74" ry="7.74" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2" pointer-events="none"/>
+    <g transform="translate(374.5,57.5)"/>
+    <path d="M 662 85 L 682 85 L 682 87 L 688.63 87" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <path d="M 693.88 87 L 686.88 90.5 L 688.63 87 L 686.88 83.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <rect x="526" y="9" width="136" height="152" rx="8.16" ry="8.16" fill="#fff2cc" stroke="#d6b656" stroke-width="2" pointer-events="none"/>
+    <g transform="translate(527.5,57.5)"/>
+    <path d="M 822 87 L 842 87 L 827 87 L 840.63 87" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <path d="M 845.88 87 L 838.88 90.5 L 840.63 87 L 838.88 83.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <path d="M 759 162 L 759 182 L 771 182 L 771 185.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <path d="M 771 190.88 L 767.5 183.88 L 771 185.63 L 774.5 183.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <rect x="695" y="12" width="127" height="150" rx="7.62" ry="7.62" fill="#f5f5f5" stroke="#666666" stroke-width="2" pointer-events="none"/>
+    <g transform="translate(696.5,59.5)"/>
+    <path d="M 695 267 L 675 267 L 675 289 L 669.37 289" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <path d="M 664.12 289 L 671.12 285.5 L 669.37 289 L 671.12 292.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <rect x="695" y="192" width="152" height="150" rx="9" ry="9" fill="#e1d5e7" stroke="#9673a6" stroke-width="2" pointer-events="none"/>
+    <g transform="translate(696.5,239.5)"/>
+    <path d="M 595 212 L 595 187 L 594 187 L 594 167.37" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <path d="M 594 162.12 L 597.5 169.12 L 594 167.37 L 590.5 169.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+    <rect x="526" y="212" width="137" height="154" rx="8.22" ry="8.22" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2" pointer-events="none"/>
+    <g transform="translate(527.5,261.5)"/>
+    <rect x="847" y="13" width="169" height="148" rx="8.88" ry="8.88" fill="#d5e8d4" stroke="#82b366" stroke-width="2" pointer-events="none"/>
+    <g transform="translate(848.5,59.5)"/>
+  </g>
+  <text x="25.048" y="84.824" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 14px; white-space: pre;">pregunta general</text>
+  <text x="210.855" y="85.643" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 14px; white-space: pre;">selecció dels llocs</text>
+  <text x="25.048" y="84.824" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 14px; white-space: pre;" transform="matrix(1.000001, 0, 0, 1, 387.995209, 1.63069)">dades</text>
+  <text x="559.203" y="290.267" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 14px; white-space: pre;">més dades</text>
+  <text x="555.143" y="90.515" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 14px; white-space: pre;">interpretació</text>
+  <text x="888.063" y="88.891" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 14px; white-space: pre;">conclusions</text>
+  <text x="713.483" y="269.155" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 14px; white-space: pre;">refina la pregunta</text>
+  <text x="814.312" y="286.2" style="white-space: pre; fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 24px;"> </text>
+  <text x="731.139" y="91.33" style="fill: rgb(51, 51, 51); font-family: sans-serif; font-size: 14px; white-space: pre;">theoria</text>
+</svg>
