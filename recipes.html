@@ -58,7 +58,138 @@
         <!-- main content area -->
         <div class="col-sm-9">
 
-        <h1>Tipus de mapes</h1>
+        <h1>Primers passos amb QGIS</h1>
+
+        <h2>Comença un nou projecte</h2>
+
+        <p>Per començar un projecte nou, utilitza el menú <kbd>Projecte &rarr; Nou</kbd> o el boton <span><img height="30px" src="images/qgis_button_new.png" alt="screenshot"></span>.</p>
+
+        <p>Important: el projecte és simplement un fitxer xml que emmagatzema paràmetres. No conté les dades del mapa o les imatges.</p>
+
+        <h2>Canvia l'idioma</h2>
+
+        <p>Per canviar l'idioma, utilitza el menú <kbd>QGIS &rarr; Preferences</kbd> i selecciona <kbd>Locale</kbd>. A continuació, reinicia QGIS.</p>
+
+            <div class="well">
+              <div class="media">
+                <div class="media-body">
+                  <h4 class="media-heading">Canviar l'idioma</h4>
+                  <p>QGIS Versió 2.18.15 per Mac</p>
+                </div>
+                <div class="media-right">
+                  <a href="images/qgis_change_language.png">
+                    <img src="images/qgis_change_language.png" class="media-object" style="max-width:700px">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <h2>Instal·la connectors</h2>
+
+            <p>Per instal·lar connectors, utilitza el menú <kbd>Connectors &rarr; Gestiona i instal·la connectors...</kbd>.</p>
+
+
+            <div class="well">
+              <div class="media">
+                <div class="media-body">
+                  <h4 class="media-heading">Instal·lar connectors</h4>
+                  <p>QGIS Versió 2.18.15 per Mac</p>
+                </div>
+                <div class="media-right">
+                  <a href="images/qgis_install_plugins.png">
+                    <img src="images/qgis_install_plugins.png" class="media-object" style="max-width:700px">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+
+        <h1>Mapes bàsics</h1>
+
+          <h2>Mapa d'ubicacions de delictes</h2>
+
+          <h3>Obtingues dades</h3>
+
+          <p>Per practicar, utilitzarem dades de assalts en Nova York en novembre i disembre 2016 que he extret de <a href="https://data.cityofnewyork.us/">NYC Open Data</a>.</p>
+
+          <a class="btn btn-default" href="data/NYPD_Complaint_Map__Year_to_Date.csv" role="button">Descarregar les dades</a>
+
+
+            <h3>Afegeix les dades</h3>
+
+            <p>Afegim les dades amb <kbd>Capa &rarr; Afegeix una capa &rarr; Afegeix una capa de text delimitada</kbd>, o amb el boton <span><img height="30px" src="images/r_add_csv_layer_button.png" alt="screenshot"></span>.</p>
+
+            <p>Selecciona el arxiu de dades (per aquesta demostració, això és <samp>NYPD_Complaint_Map__Year_to_Date.csv</samp>). En la linea <kbd>Definició de geometria</kbd>, selecciona <kbd>Coordenades del punt</kbd> i fes clic a <kbd>OK</kbd>.</p>
+
+            <div class="well">
+              <div class="media">
+                <div class="media-body">
+                  <h4 class="media-heading">Selecció d'arxius</h4>
+                  <p>QGIS Versió 2.18.2 per Mac</p>
+                </div>
+                <div class="media-right">
+                  <a href="images/add_point_data.png">
+                    <img src="images/add_point_data.png" class="media-object" style="max-width:700px">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <p>Selecciona una sistema de referència de coordinades (SRC). Si els coordinades dels punts son latitud i longitud, el SRC correcte es WGS 84 (EPSG 4326) i normalment esta seleccionat per defecte. Si tens dades amb altres coordinades, haurias de mirar en la documentació de les dades per a buscar el SRC.</p>
+
+            <div class="well">
+              <div class="media">
+                <div class="media-body">
+                  <h4 class="media-heading">Selecció del sistema de referència de coordinades</h4>
+                  <p>QGIS Versió 2.18.2 per Mac</p>
+                </div>
+                <div class="media-right">
+                  <a href="images/add_point_data_proj.png">
+                    <img src="images/add_point_data_proj.png" class="media-object" style="max-width:700px">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <p>El teu finestre hauria de d'aparèixer això (més o menys):</p>
+
+
+    <div class="well">
+              <div class="media">
+                <div class="media-body">
+                  <h4 class="media-heading">Dades de punts i polígons afegit</h4>
+                  <p>QGIS Versió 2.18.2 per Mac</p>
+                </div>
+                <div class="media-right">
+                  <a href="images/qgis_nyc_assault_points_only.png">
+                    <img src="images/qgis_nyc_assault_points_only.png" class="media-object" style="max-width:700px">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+<p>Tens ubicacions de assalts però res més. Pots obtenir informació sobre cada assalt utilitzant la eina <kbd>Visualització &rarr; Identifica els objectes</kbd> (el boton span><img height="30px" src="images/qgis_info_button.png" alt="screenshot"></span>.)</p>
+
+   <h3>Afegeix un mapa</h3>
+
+   <p>Instal·la el "OpenLayers Plugin" si ja no tens.</p>
+
+   <p>Afegeix Google Maps imatges amb <kbd>Lloc web &rarr; Google Maps &rarr; Google Satellite</kbd>. Els punts de assalts despareixen perque estan sota els imatges del Google Maps.</p>
+
+   <p>Reordena les capes del mapa arrossegant la capa "Google Satellite" per sota la capa "NYPD_Complaint_Map__Year_to_Date" en la subfinestra de capes.</p>
+
+   <p>Canviar el estil dels marcadors de la capa "NYPD_Complaint_Map__Year_to_Date" per fer-els més visibles: Fes doble clic a la capa i selecciona <kbd>Estil</kbd>.</p>
+
+   <h3>Afegeix dades vectorials</h3>
+
+   <p>Zoom a una àrea que trobas interessant.</p>
+
+<p>Afegeix dades de Open Street Maps amb <kbd>Vectorial &rarr; OpenStreetMap &rarr; Baixa dades...</kbd>. Per "Extensió" selecciona "Des de la vista del mapa." Per "Fitxer de sortida", selecciona un lloc on pots guardar les dades.  Despres de guardar-les, hauras de afegir amb <kbd>Capa &rarr; Afeigeix una capa &rarr;  Afeigeix una capa vectorial...</kbd></p>
+
+        <h1>Mapes de dades agregades</h1>
 
           <h2>Choropleth</h2>
 
