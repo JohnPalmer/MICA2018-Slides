@@ -33,146 +33,80 @@
 
 			<section>
 				<h1>Mètodes d'Investigació Criminològica Avançada</h1>
-				<h3>Sessió 10: Buffers, distàncies, agregació, patrons, i agrupament</h3>
+				<h3>Sessió 10: Programari de SIG</h3>
 				<p><a href="http://johnrbpalmer.com">John Palmer</a>
 				</section>
 
-				<section>
-				<h2>Analitzar dades de punt</h2>
-				</section>
+<section>
+	<h2>Programari de SIG</h2>
+	<ul>
+		<li>llegir mapes</li>
+		<li>afegir informació espacial</li>
+		<li>anàlisi espacial</li>
+		<li>imprimir mapes</li>
+		<li>manejar SRC i la seva transforcó</li>
+		<li>GUI</li>
+		<li>capes</li>
+		<li>llegenda</li>
+		<li>servidor</li>
+	</ul>
+</section>
 
-				<section>
-				<h3>Assalts a Nova York</h3>
-				<a href="https://data.cityofnewyork.us/">NYC Open Data</a><br><br>
-				<a href="data/NYPD_Complaint_Map__Year_to_Date.csv">Assalts, 11/01/2016-12/31/2016</a><br>
-				<a href="data/Police Precincts.geojson">Precinct Shapefiles</a>
-				</section>
+<section>
+	<h2>Programari de SIG</h2>
+	<ul>
+		<li>QGIS</li>
+		<li>ArcGIS</li>
+		<li>GRASS</li>
+		<hr>
+		<li>R</li>
+		<li>Stata</li>
+		<li>Python</li>
+	</ul>
+</section>
 
-				<section>
-				<h3>Agregació per unitat administrativa</h3>
-				</section>
+<section>
+	<p>dades vs mapatge</p>
+</section>
 
-				<section>
-				<h4>Comptar punts en polígons</h4>
-				<img src="images/count_points_polys.png" class="stretch">
-				</section>
+<section>
+<h2>R</h2>
+</section>
 
-				<section>
-				<img src="images/nyc_assaults_precinct.png" class="stretch">
-				</section>
+<section data-background="images/rstudio_img.png" data-background-size="contain">
+</section>
 
-				<section>
-				<h3>Modifiable Areal Unit Problem (MAUP)</h3>
-				<h4>El problema de les unitats d'àrea modificables</h4>
-				</section>
+<section>
+<h3>biblioteques de R</h3>
+<pre><code data-trim data-noescape>install.packages("tidyverse")</code></pre>
+</section>
 
-				<section>
-				<img src="images/mmqgisgrid_options.png" class="stretch">
-				</section>
+<section>
+<h3>domar dades</h3>
+<p><a href="data-wrangling-spanish.pdf">Full de referència</a></p> 
+</section>
 
-				<section>
-				<img src="images/nyc_assaults_hex.png" class="stretch">
-				</section>
+<section>
+<h3>domar dades</h3>
+<pre><code data-trim data-noescape>D <- tlb_df(USArrests)</code></pre>
+<pre><code data-trim data-noescape>D <- as.tibble(USArrests)</code></pre>
+</section>
 
-				<section>
- 				<img src="images/nyc_crime_hist_x.png" class="stretch">
-				</section>
+<section>
+<h3>domar dades</h3>
+<pre><code data-trim data-noescape>glimpse(D)</code></pre>
+<pre><code data-trim data-noescape>View(D)</code></pre>
+</section>
 
-				<section>
- 				<img src="images/nyc_crime_hist_y.png" class="stretch">
-				</section>
+<section>
+<h3>domar dades</h3>
+<pre><code data-trim data-noescape>%>%</code></pre>
+<pre><code data-trim data-noescape>D <- as.tibble(USArrests) %>% 
+	select(Assault, UrbanPop) %>% 
+	rename(upop = UrbanPop)
+</code></pre>
+</section>
 
-				<section>
-				<img src="images/maup_hex.png" class="stretch">
-				</section>
-
-				<section>
-				<p>És possible evitar el MAUP?</p>
-				</section>
-
-				<section>
- 				<img src="images/nyc_crime_density_x.png" class="stretch">
-				</section>
-
-				<section>
- 				<img src="images/nyc_crime_density_y.png" class="stretch">
-				</section>
-
-
-				<section>
-				<h3>mapes de calor</h3>
-				</section>
-
-				<section>
-				<h4>Connector: mapa de calor (heat map)</h4>
-				<img src="images/plugin_heatmap.png" class="stretch">
-				</section>
-
-				<section>
-				<h4>Selecciona: Ràster / Mapa de calor / Mapa de calor</h4>
-				<img src="images/heatmap_menu.png" class="stretch">
-				</section>
-
-				<section>
-				<h4>Opcions</h4>
-				<img src="images/heatmap_options.png" class="stretch">
-				</section>
-
-				<section>
-				<img src="images/nyc_assaults_heat_100m.png" class="stretch">
-				</section>
-
-				<section>
-				<h4>estimació de densitat kernel (kernel density estimation)</h4>
-				$$ \hat{f}_h(x) = \frac{1}{n}\sum_{i=1}^n K_h(x - x_i) =  \frac{1}{nh}\sum_{i=1}^n K\left(\frac{x - x_i}{h}\right)$$
-				</section>
-
-
-
-				<section>
- 				<img src="images/nyc_crime_density_x_hcomp.png" class="stretch">
-				</section>
-
-				<section>
- 				<img src="images/nyc_crime_density_y_hcomp.png" class="stretch">
-				</section>
-
-
-
-				<section>
-				<img src="images/nyc_assaults_heat_10m.png" class="stretch">
-				</section>
-
-				<section>
-				<img src="images/nyc_assaults_heat_1000m.png" class="stretch">
-				</section>
-
-				<section>
-				<h3>el·lipse de desviació estàndard</h3>
-				</section>
-
-				<section>
-				<h4>Connector: Standard Deviational Ellipse</h4>
-				<img src="images/plugin_heatmap.png" class="stretch">
-				</section>
-
-				<section>
-				<img src="images/nyc_crime_sde.png" class="stretch">
-				</section>
-
-
-				<section data-background="images/pencils.jpg" data-state="footer_pencils">
-					<div style="background-color: rgba(255, 255, 255, .95); padding:20px;">
-						<h2>Projecte de Cartografia</h2>
-						<ul>
-							<li>6 de març: Segon Mapa</li>
-							<li>13 de març: Presentar mapes finals</li>
-
-						</ul>
-					</div>
-					<style>.footer_pencils footer:after { content: "Pencils, Public Domain, Wikimedia Commons"; color:white;background-color: rgba(0,0,0,0.5); padding: 5px;}</style>							
-					<div>&nbsp;</div>	
-				</section>
 
 			</div>
 		</div>
@@ -192,9 +126,6 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
-								   // Transition style
-			    transition: 'fade', // none/fade/slide/convex/concave/zoom
-
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
