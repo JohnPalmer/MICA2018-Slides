@@ -37,6 +37,131 @@
 				<p><a href="http://johnrbpalmer.com">John Palmer</a>
 				</section>
 
+			
+				<section>
+				<h2>Analitzar dades de punt</h2>
+				</section>
+
+				<section>
+				<h3>Assalts a Nova York</h3>
+				<a href="https://data.cityofnewyork.us/">NYC Open Data</a><br><br>
+				<a href="data/NYPD_Complaint_Map__Year_to_Date.csv">Assalts, 11/01/2016-12/31/2016</a><br><br>
+				<a href="data/Police Precincts.geojson">Precinct Shapefiles</a>
+				</section>
+
+				<section>
+				<h3>Agregació per unitat administrativa</h3>
+				</section>
+
+				<section>
+				<h4>Comptar punts en polígons</h4>
+				<img src="images/count_points_polys.png" class="stretch">
+				</section>
+
+				<section>
+				<img src="images/nyc_assaults_precinct.png" class="stretch">
+				</section>
+
+				<section>
+				<h3>Modifiable Areal Unit Problem (MAUP)</h3>
+				<h4>El problema de les unitats d'àrea modificables</h4>				
+				</section>
+
+				<section>
+				<img src="images/mmqgisgrid_options.png" class="stretch">
+				</section>
+
+				<section>
+				<img src="images/nyc_assaults_hex.png" class="stretch">
+				</section>
+
+				<section>
+ 				<img src="images/nyc_crime_hist_x.png" class="stretch">
+				</section>
+
+				<section>
+ 				<img src="images/nyc_crime_hist_y.png" class="stretch">
+				</section>
+
+				<section>
+				<img src="images/maup_hex.png" class="stretch">
+				</section>
+
+				<section>
+				<p>És possible evitar el MAUP?</p>
+				</section>
+
+				<section>
+ 				<img src="images/nyc_crime_density_x.png" class="stretch">
+				</section>
+
+				<section>
+ 				<img src="images/nyc_crime_density_y.png" class="stretch">
+				</section>
+
+
+				<section>
+				<h3>mapes de calor</h3>
+				</section>
+
+				<section>
+				<h4>Connector: mapa de calor (heat map)</h4>
+				<img src="images/plugin_heatmap.png" class="stretch">
+				</section>
+
+				<section>
+				<h4>Selecciona: Ràster / Mapa de calor / Mapa de calor</h4>
+				<img src="images/heatmap_menu.png" class="stretch">
+				</section>
+
+				<section>
+				<h4>Opcions</h4>
+				<img src="images/heatmap_options.png" class="stretch">
+				</section>
+
+				<section>
+				<img src="images/nyc_assaults_heat_100m.png" class="stretch">
+				</section>
+
+				<section>
+				<h4>estimació de densitat kernel (kernel density estimation)</h4>
+				$$ \hat{f}_h(x) = \frac{1}{n}\sum_{i=1}^n K_h(x - x_i) =  \frac{1}{nh}\sum_{i=1}^n K\left(\frac{x - x_i}{h}\right)$$
+				</section>
+
+
+
+				<section>
+ 				<img src="images/nyc_crime_density_x_hcomp.png" class="stretch">
+				</section>
+
+				<section>
+ 				<img src="images/nyc_crime_density_y_hcomp.png" class="stretch">
+				</section>
+
+
+
+				<section>
+				<img src="images/nyc_assaults_heat_10m.png" class="stretch">
+				</section>
+
+				<section>
+				<img src="images/nyc_assaults_heat_1000m.png" class="stretch">
+				</section>
+
+				<section>
+				<h3>el·lipse de desviació estàndard</h3>
+				</section>
+
+				<section>
+				<h4>Connector: Standard Deviational Ellipse</h4>
+				<img src="images/plugin_heatmap.png" class="stretch">
+				</section>
+
+				<section>
+				<img src="images/nyc_crime_sde.png" class="stretch">
+				</section>
+
+
 				<section>
 				<h2>agrupament</h2>
 				<img src="images/unclustered_map.png" class="stretch">
@@ -59,11 +184,7 @@
 
 			<section>
 				<h3>"K-means" agrupament</h3>
-				<img class="stretch" src="images/qgis_cluster_plugin">
-				</section>
-
-				<section>
-				<a href="clustering.py">Python Script</a>
+				<img class="stretch" src="images/qgis_cluster_plugin.png">
 				</section>
 
 				<section>
@@ -120,29 +241,15 @@
 			</section>
 
 			
-<section>
-<h2>noves fonts de dades</h2>
+			<section>
+<h3>domar dades</h3>
+<p><a href="data/SubwayEntrances.geojson">Subways</a></p> 
+<br>
+<p><a href="data/Police Precincts.geojson">Precincts</a></p> 
+<br>
+<p><a href="data/NYPD_Complaint_Map__Year_to_Date.csv">Delictes</a></p> 
 </section>
 
-				<section>
-				<h3>Twitter</h3>
-				<img class="stretch" src="images/twitter_animation_longest.gif">
-				</section>
-
-
-
-				<section data-background="images/pencils.jpg" data-state="footer_pencils">
-					<div style="background-color: rgba(255, 255, 255, .95); padding:20px;">
-						
-						<ul><li><b>Llegir</b>: Oyala (2014) cap. 12</li>
-							<li><b>Projecte</b>: 7 de març: Segon Mapa</li>
-							<li><b>Projecte</b>: 13 de març: Presentar mapes finals</li>
-
-						</ul>
-					</div>
-					<style>.footer_pencils footer:after { content: "Pencils, Public Domain, Wikimedia Commons"; color:white;background-color: rgba(0,0,0,0.5); padding: 5px;}</style>							
-					<div>&nbsp;</div>	
-				</section>
 
 			</div>
 		</div>
