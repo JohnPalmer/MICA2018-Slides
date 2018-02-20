@@ -33,20 +33,27 @@
 
 			<section>
 				<h1>Mètodes d'Investigació Criminològica Avançada</h1>
-				<h3>Sessió 12: Correlació, autocorrelació i inferència</h3>
+				<h3>Sessió 12: Agrupament, distàncies, buffers</h3>
 				<p><a href="http://johnrbpalmer.com">John Palmer</a>
 				</section>
-
 <section>
-				<h2>Distàncies i Buffers</h2>
-				</section>
-
+				<a href="data/s12.zip">Dades</a><br><br>
+				<a href="demo_s12.R">Codi</a><br>
+</section>
 
 				<section>
-				<a href="data/SubwayEntrances.geojson">Dades dels entrades del metro</a><br>
-	<a href="data/NYPD_Complaint_Map__Year_to_Date.csv">Assalts, 11/01/2016-12/31/2016</a><br>
-				<a href="data/Police Precincts.geojson">Precinct Shapefiles</a>	
+					<h2>Agrupament</h2>
+				<h3>"K-means"</h3>
+				$$\textrm{arg min}\sum_{i=1}^k\sum_{x_j \in s_i}\left(x_j - \mu_i \right)^2$$
+				</section>
+
+			<section>
+				<h2>Agrupament</h2>
+					<h3>"K-means": R</h3>
+						<pre><code data-trim data-noescape>clusters = kmeans(D, 9)</code></pre>
 			</section>
+
+
 
 							<section>
 				<h2>Distàncies</h2>
@@ -91,68 +98,6 @@
 				<img class="stretch", src="images/nyc_subway_entrances.png">
 				</section>
 
-
-				<section>
-				<h4>Dades</h4>
-				<a href="data/nyc_zipcodes_epsg4326.geojson">Zipcodes</a><br>
-				<a href="data/NYPD_Complaint_Map__Year_to_Date.csv">Assalts</a><br>
-				<a href="data/SubwayEntrances.geojson">Entrades de metro</a><br>
-				<a href="data/Demographic_Statistics_By_Zip_Code.csv">Dades de població</a>
-				</section>
-
-				<section>
-				<h2>Correlació</h2>
-				</section>
-
-
-				<section>
-				<img class="stretch", src="images/assaults_subways.png">
-				</section>
-
-				<section>
-				<h2>Autocorrelació</h2>
-				</section>
-
-				<section>
-				<img class="stretch" src="images/points_random.png">
-				</section>
-
-
-				<section>
-				<img class="stretch" src="images/points_uniform.png">
-				</section>
-
-				<section>
-				<h3>Measuring Autocorrelació</h3>
-				</section>
-
-
-				<section>
-				<h4>Moran's I</h4>
-				</section>
-
-
-				<section>
-				<h2>Inferència</h2>
-				</section>
-
-				<section>
-				<h3>Spatial Regression</h3>
-				</section>
-
-
-				<section data-background="images/pencils.jpg" data-state="footer_pencils">
-					<div style="background-color: rgba(255, 255, 255, .95); padding:20px;">
-						
-						<ul><li><b>Llegir</b>: Oyala (2014) cap. 15</li>
-							<li><b>Projecte</b>: 7 de març: Segon Mapa</li>
-							<li><b>Projecte</b>: 13 de març: Presentar mapes finals</li>
-
-						</ul>
-					</div>
-					<style>.footer_pencils footer:after { content: "Pencils, Public Domain, Wikimedia Commons"; color:white;background-color: rgba(0,0,0,0.5); padding: 5px;}</style>							
-					<div>&nbsp;</div>	
-				</section>
 
 			</div>
 		</div>
