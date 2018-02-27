@@ -56,7 +56,7 @@ M = lm(assalt_per_pop~brut+llum+entrades, data=D)
 summary(M)
 
 # read polygons
-zipcode_polygons = readOGR("zipcodes.geojson", "OGRGeoJSON")
+zipcode_polygons = readOGR("nyc_zipcodes.geojson", "OGRGeoJSON")
 
 zipcodes = merge(zipcode_polygons, D, by="ZIPCODE")
 
