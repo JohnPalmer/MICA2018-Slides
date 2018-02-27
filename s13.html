@@ -34,111 +34,32 @@
 
 			<section>
 				<h1>Mètodes d'Investigació Criminològica Avançada</h1>
-				<h3>Sessió 13: Correlació, autocorrelació i inferència</h3>
+				<h3>Sessió 13: Autocorrelació</h3>
 				<p><a href="http://johnrbpalmer.com">John Palmer</a>
 				</section>
+
 
 				<section>
 				<h4>Assalts a Nova York</h4>
 				<img class="stretch", src="images/nyc_assaults_per_person.png">
 				</section>
 
-
 				<section>
 				<h4>Les entrades de metro a Nova York</h4>
 				<img class="stretch", src="images/nyc_subway_entrances.png">
-				</section>
-
-
-				<section>
-				<h4>Dades</h4>
-				<a href="data/nyc_zipcodes_epsg4326.geojson">Zipcodes</a><br>
-				<a href="data/NYPD_Complaint_Map__Year_to_Date.csv">Assalts</a><br>
-				<a href="data/SubwayEntrances.geojson">Entrades de metro</a><br>
-				<a href="data/Demographic_Statistics_By_Zip_Code.csv">Dades de població</a>
-				<p>o</p>
-				<a href="data/nyc_assaults_subway_data.zip">Dades processades</a>
-				</section>
-
-				<section>
-				<h4>Python</h4>
-				<a href="https://www.python.org/">Python</a><br>
-				<a href="https://www.continuum.io/downloads">Anaconda</a><br>
-				<a href="https://www.pythonanywhere.com">Python Anywhere</a>
-				</section>
-
-				<section>
-				<h4>PySal</h4>
-				<pre><code>pip install pysal</code></pre>
-				<p>o</p>
-				<pre><code>conda install -c anaconda pysal</code></pre>
-
-				</section>
-
-
-				<section>
-				<h4>Editor de text o IDE</h4>
-				<a href="https://www.sublimetext.com/">Sublime Text</a><br>
-				<a href="https://www.yhat.com/products/rodeo">Rodeo</a><br>
-				<a href="https://www.jetbrains.com/pycharm/">PyCharm</a>
-				</section>
-
-				<section>
-				<h4>Sublime: Setup:</h4>
-					<a href="https://packagecontrol.io/installation">Package Control</a><br>
-					<a href="https://packagecontrol.io/packages/SendREPL">SendREPL</a><br>
-					<a href="https://packagecontrol.io/packages/Anaconda">Anaconda (sublime)</a>
-				</section>
-
-				<section>
-				<h4>Sublime: Estil</h4>
-					<a href="https://github.com/wesbos/cobalt2">Cobalt2</a><br>
-					<div style="text-align: left"><small>User Preferences:</small></div>
-					<script src="https://gist.github.com/JohnPalmer/b07bb022f9734253420a3b5a07a03865.js"></script>
-				</section>
-
-				<section>
-				<h2>Correlació</h2>
-				</section>
-
-
-				<section>
-				<img class="stretch", src="images/assaults_subways.png">
-				</section>
-
-				<section>
-				<script src="https://gist.github.com/JohnPalmer/962467d58e67bc9d46f5e52de0a4b139.js"></script>
-				</section>
-
-				<section>
-				<h2>Autocorrelació</h2>
 				</section>
 
 				<section>
 				<img class="stretch" src="images/points_random.png">
 				</section>
 
-
 				<section>
 				<img class="stretch" src="images/points_uniform.png">
-				</section>
-
-
-				<section>
-				<h4>Assalts a Nova York</h4>
-				<img class="stretch", src="images/nyc_assaults_per_person.png">
-				</section>
-
-
-				<section>
-				<h4>Les entrades de metro a Nova York</h4>
-				<img class="stretch", src="images/nyc_subway_entrances.png">
 				</section>
 
 				<section>
 				<h3>Mesures de Autocorrelació</h3>
 				</section>
-
 
 				<section>
 				<h4>I de Moran</h4>
@@ -154,26 +75,58 @@
 				</section>
 
 				<section>
-				<script src="https://gist.github.com/JohnPalmer/5c288b3ffe025da260712e58aa4308ac.js"></script>
+				<h2>Regressió espacial</h2>
+				</section>
+
+
+				<section>
+				<img class="stretch" src="images/c14_pop_assault.png">
 				</section>
 
 				<section>
-				<h2>Inferència</h2>
+				<img class="stretch" src="images/c14_subways_assaults.png">
 				</section>
 
+<section>
+<h4>OLS Model</h4>
+$$ y = \alpha + \beta X + \epsilon$$
+</section>
 
-				<section data-background="images/pencils.jpg" data-state="footer_pencils">
-					<div style="background-color: rgba(255, 255, 255, .95); padding:20px;">
-						
-						<ul><li><b>Llegir</b>: Oyala (2014) cap. 15</li>
-							<li><b>Projecte</b>: 7 de març: Segon Mapa</li>
-							<li><b>Projecte</b>: 13 de març: Presentar mapes finals</li>
 
-						</ul>
-					</div>
-					<style>.footer_pencils footer:after { content: "Pencils, Public Domain, Wikimedia Commons"; color:white;background-color: rgba(0,0,0,0.5); padding: 5px;}</style>							
-					<div>&nbsp;</div>	
-				</section>
+<section>
+<h4>Model amb retard espacial en un variable independent</h4>
+$$ y = \alpha + \beta X + \rho W X +  \epsilon$$
+</section>
+
+
+<section>
+<h4>Model amb retard espacial en els variables dependent i independent</h4>
+$$ y = \alpha + \beta X + \rho_1 W X + \rho_2 W X +  \epsilon$$
+</section>
+
+
+<section>
+<h4>Model de errors espacials</h4>
+$$ y = \alpha + \beta X + \epsilon$$
+$$ \epsilon = \lambda W u + e$$
+</section>
+
+
+<section data-background-image="images/echazarra_cover.png" data-background-size="contain">
+</section>
+
+
+<section data-background-image="images/echazarra_sp.png" data-background-size="contain">
+</section>
+
+
+
+			<section>
+<h3>Implementació amb R</h3>
+				<a href="data/s12.zip">Dades</a><br><br>
+				<a href="demo_s12.R">Codi</a><br>
+			</section>
+
 
 			</div>
 		</div>
